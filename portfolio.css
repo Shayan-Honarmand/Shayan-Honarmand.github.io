@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+
+}
+
+
+nav{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background-color: rgb(4, 0, 34) ;
+  }
+
+  nav .logo{
+  flex: 1;
+  font-size: 150%;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 2px #000;
+  margin-left: 2%;
+  }
+
+  nav ul{
+  flex: 2;       
+  display: flex;
+  margin-left: 20%;
+
+  }
+
+  nav ul li{
+  list-style: none;
+  }
+  
+  nav ul li a{
+  text-decoration: none;
+  color: rgb(67, 1, 122);
+  font-size: 150%;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  } 
+
+
+  nav ul li a:hover{
+
+    border-bottom: solid 1px #924bd0;
+    box-shadow: 0 0 10px #d16aee;
+    background-color: #df18e613;
+
+    } 
+
+  nav .menu{
+  font-size: 2.5em;
+  display: none;
+  }
+
+  .chk1 {
+    display: none;
+  }
+
+  #chk1 {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+  }
+
+  .menu-icon {
+    visibility: hidden;
+  }
+
+
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: #06000f;
+    filter: saturate(2);
+    overflow: hidden;
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #070015;
+}
+
+.colorBox:hover{
+    background: #29145a;
+    transition-duration: 0s;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #3c9dec;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
+/* ------------------------backgounf and header in profile------------------------ */
+
+
+
+.profileTexts {
+    position: relative;
+  }
+
+.text {
+    position: absolute;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-family: 'Instrument Serif', serif;
+    font-weight: 900;
+    line-height: 1.5;
+    max-width:35rem;
+    font-size: 3rem;
+    padding: 1rem;
+    color: #ffffff; 
+    border-radius: 10%;
+  }
+
+
+  /* -----------------------------------text for profile done------------------- */
+
+
+
+
+
+  .profileImgContainer {
+    position: relative;
+
+  }
+
+  .profileImgContainer > img {
+    position: absolute;
+    margin-left:  75%;
+    margin-top: 10rem;
+    height: 70vh;
+    width: 20vw;
+  }
+
+
+    /* -----------------------------------img for profile done------------------- */
+
+    
+    .profileSocials {
+        position: relative;
+        display: flex;
+        pointer-events: none;
+    }
+    
+    .icon {
+        height: 2rem;
+        width: 2rem;
+        margin: 0 10px;
+        border-radius: 30%;
+        background-color: #5099c3;
+      }
+
+      .profileIcons {
+        position: absolute;
+        margin: 27rem 33rem;
+
+      }
+
+      .profileButtons {
+        position: absolute;
+        margin: 22rem 30rem;
+
+      }
+
+       .profileButtons > a > button {
+
+        border-radius: 20%;
+        background-color: transparent;
+        color: #62cdd8;
+        border-color: #62cdd8 ;
+        height: 3rem;
+        width: 6rem;
+        font-weight: 900;
+        margin-left: 1rem;
+      }
+
+
+      .icon,  .profileButtons > a > button {
+       cursor: pointer;
+       pointer-events: all;
+      }
+
+      .profileButtons > a > button:hover {
+        background-color: #120769; 
+        -webkit-box-shadow: -10px 0px 13px -7px #62cdd8, 10px 0px 13px -7px #62cdd8, 0px 0px 18px 9px #62cdd8; 
+        box-shadow: -10px 0px 13px -7px #62cdd8, 10px 0px 13px -7px #62cdd8, 0px 0px 18px 9px #62cdd8;
+
+      }
+      .icon:hover {
+        background-color: #72a6de; 
+        -webkit-box-shadow: -10px 0px 13px -7px #62cdd8, 10px 0px 13px -7px #62cdd8, 0px 0px 18px 9px #62cdd8; 
+        box-shadow: -10px 0px 13px -7px #62cdd8, 10px 0px 13px -7px #62cdd8, 0px 0px 18px 9px #62cdd8;
+      }
+
+
+/* ---------------------------------------------button and icon done ----------------- */
+
+
+#about {
+    padding: 2rem;
+    background-image: linear-gradient(to bottom right, rgb(40, 5, 61), rgb(7, 29, 73));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+#about > .button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 80%;
+    margin-bottom: 20%;
+
+
+}
+
+#about > .button:hover {
+    opacity: 0.8;
+}
+
+/* ----------------------------------Crazy button Start---------------------- */
+.my-super-cool-btn{
+    position:relative;
+    text-decoration:none;
+    color:#fff;
+    letter-spacing:1px;
+    font-size:1rem;
+    box-sizing:border-box;
+  }
+  .my-super-cool-btn span{
+    position:relative;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:200px;
+    height:200px;
+  }
+  .my-super-cool-btn span:before{
+    content:'';
+    width:100%;
+    height:100%;
+    display:block;
+    position:absolute;
+    border-radius:100%;
+    border:7px solid #00bbff;
+    box-sizing:border-box;
+    transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+    box-shadow: 0 30px 85px rgba(0,0,0,0.14), 0 15px 35px rgba(0,0,0,0.14);
+  }
+
+  .my-super-cool-btn:hover span:before{
+    transform:scale(0.8);
+    box-shadow: 0 20px 550px 50px rgb(3, 162, 236), 0 15px 35px 60px rgba(238, 0, 255, 0.992);
+  }
+
+
+  .my-super-cool-btn .dots-container{
+    opacity:0;
+    animation: intro 1.6s;
+    animation-fill-mode: forwards;
+  }
+  .my-super-cool-btn .dot{
+    width:8px;
+    height:8px;
+    display:block;
+    background-color:#d500f6;
+    border-radius:100%;
+    position:absolute;
+    transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+  }
+  .my-super-cool-btn .dot:nth-child(1){
+    top:50px;
+    left:50px;
+    transform:rotate(-140deg);
+    animation: swag1-out 0.3s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+  .my-super-cool-btn .dot:nth-child(2){
+    top:50px;
+    right:50px;
+    transform:rotate(140deg);
+    animation: swag2-out 0.3s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+  .my-super-cool-btn .dot:nth-child(3){
+    bottom:50px;
+    left:50px;
+    transform:rotate(140deg);
+    animation: swag3-out 0.3s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+  .my-super-cool-btn .dot:nth-child(4){
+    bottom:50px;
+    right:50px;
+    transform:rotate(-140deg);
+    animation: swag4-out 0.3s;
+    animation-fill-mode: forwards;
+    opacity:0;
+  }
+  .my-super-cool-btn:hover .dot:nth-child(1){
+    animation: swag1 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .my-super-cool-btn:hover .dot:nth-child(2){
+    animation: swag2 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .my-super-cool-btn:hover .dot:nth-child(3){
+    animation: swag3 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .my-super-cool-btn:hover .dot:nth-child(4){
+    animation: swag4 0.3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes intro {
+     0% {
+       opacity:0;
+    }
+    100% {
+       opacity:1;
+    }
+  }
+  @keyframes swag1 {
+     0% {
+       top:50px;
+       left:50px;
+       width:8px;
+    }
+    50% {
+      width:30px;
+      opacity:1;
+    }
+    100% {
+       top:20px;
+       left:20px;
+       width:8px;
+       opacity:1;
+    }
+  }
+  @keyframes swag1-out {
+     0% {
+       top:20px;
+       left:20px;
+       width:8px;
+    }
+    50% {
+       width:30px;
+      opacity:1;
+    }
+    100% {
+       top:50px;
+       left:50px;
+       width:8px;
+      opacity:0;
+    }
+  }
+  @keyframes swag2 {
+     0% {
+       top:50px;
+       right:50px;
+       width:8px;
+    }
+    50% {
+      width:30px;
+      opacity:1;
+    }
+    100% {
+       top:20px;
+       right:20px;
+       width:8px;
+       opacity:1;
+    }
+  }
+  @keyframes swag2-out {
+     0% {
+       top:20px;
+       right:20px;
+       width:8px;
+    }
+    50% {
+       width:30px;
+      opacity:1;
+    }
+    100% {
+       top:50px;
+       right:50px;
+       width:8px;
+      opacity:0;
+    }
+  }
+  @keyframes swag3 {
+     0% {
+       bottom:50px;
+       left:50px;
+       width:8px;
+    }
+    50% {
+      width:30px;
+      opacity:1;
+    }
+    100% {
+       bottom:20px;
+       left:20px;
+       width:8px;
+       opacity:1;
+    }
+  }
+  @keyframes swag3-out {
+     0% {
+       bottom:20px;
+       left:20px;
+       width:8px;
+    }
+    50% {
+       width:30px;
+      opacity:1;
+    }
+    100% {
+       bottom:50px;
+       left:50px;
+       width:8px;
+      opacity:0;
+    }
+  }
+  @keyframes swag4 {
+     0% {
+       bottom:50px;
+       right:50px;
+       width:8px;
+    }
+    50% {
+      width:30px;
+      opacity:1;
+    }
+    100% {
+       bottom:20px;
+       right:20px;
+       width:8px;
+       opacity:1;
+    }
+  }
+  @keyframes swag4-out {
+     0% {
+       bottom:20px;
+       right:20px;
+       width:8px;
+    }
+    50% {
+       width:30px;
+      opacity:1;
+    }
+    100% {
+       bottom:50px;
+       right:50px;
+       width:8px;
+      opacity:0;
+    }
+  }
+/* ---------------------------------carzy button done-------------------------   */
+
+.aboutContainer {
+    background-image:linear-gradient( to bottom right , rgb(40, 5, 61), rgb(7, 29, 73));
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.aboutContainer.open {
+    opacity: 1;
+    z-index: 99;
+}
+
+
+
+.aboutMe-inner > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5em;
+  margin-top: 2em;
+  font-size: 2.3em;
+  color: #ffffff;
+  font-family: 'Anton', sans-serif;
+}
+
+.aboutMe-inner > p { 
+  margin: 0 auto;
+  line-height: 2em;
+  font-size: 1.2em;
+  color: #ffffff;
+  max-width: 60%;
+  font-family: 'Jost', sans-serif;
+}
+
+.aboutMe-inner > button {
+
+  font-size: 1.5em;
+  margin-left: 45%;
+  margin-top: 6%;
+  height: 5em;
+  width: 5em;
+  border-radius: 70%;
+  background-color: transparent;
+  color: rgb(12, 189, 229);
+  border: 0.1em solid rgb(23, 133, 217);
+  cursor: pointer;
+}
+
+
+.aboutMe-inner > button:hover {
+  box-shadow: 0 20px 50px 10px rgb(3, 162, 236), 0 15px 30px 10px rgba(238, 0, 255, 0.992);
+  transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+}
+
+
+/* ---------------------------------about done ------------------------------/ */
+
+#Experience {
+  background-image: linear-gradient(to bottom right, rgb(40, 5, 61), rgb(7, 29, 73));
+  padding: 1px;
+}
+
+#particles-js{
+
+  z-index: 9999;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+
+#marketingAndSales{
+  
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  
+}
+
+#marketingAndSales.open {
+  opacity: 1;
+  z-index: 999;
+  background-image:linear-gradient( to bottom right , rgb(40, 5, 61), rgb(7, 29, 73));
+}
+
+
+#marketingAndSales > button {
+  font-size: 1.5em;
+  margin-left: 45%;
+  margin-top: 40%;
+  height: 5em;
+  width: 5em;
+  border-radius: 70%;
+  background-color: transparent;
+  color: rgb(218, 12, 229);
+  border: 0.1em solid rgb(204, 23, 217);
+  cursor: pointer;
+} 
+
+#marketingAndSales > button:hover {
+  box-shadow: 0 20px 50px 10px rgb(201, 3, 236), 0 15px 30px 10px rgba(0, 221, 255, 0.992);
+  transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+}
+
+
+#openMRK {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 20%;
+  font-size: 1.5em;
+  height: 6em;
+  width: 6em;
+  border-radius: 70%;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 0.3em solid rgb(178, 23, 217);
+  cursor: pointer;
+}
+
+.openMRK:hover {
+  box-shadow: 0 20px 50px 10px rgb(209, 3, 236), 0 15px 30px 10px rgba(0, 174, 255, 0.992);
+  transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+}
+
+#marketingAndSales > video {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+
+}
+
+.closeMRK {
+  z-index: 99;
+}
+
+
+#cngContainer{
+  
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  
+}
+
+#cngContainer.open {
+  opacity: 1;
+  z-index: 999;
+  background-image:linear-gradient( to bottom right , rgb(40, 5, 61), rgb(7, 29, 73));
+}
+
+
+#cngContainer > button {
+  font-size: 1.5em;
+  margin-left: 45%;
+  margin-top: 40%;
+  height: 5em;
+  width: 5em;
+  border-radius: 70%;
+  background-color: transparent;
+  color: rgb(218, 12, 229);
+  border: 0.1em solid rgb(204, 23, 217);
+  cursor: pointer;
+} 
+
+#cngContainer > button:hover {
+  box-shadow: 0 20px 50px 10px rgb(201, 3, 236), 0 15px 30px 10px rgba(0, 221, 255, 0.992);
+  transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+}
+
+
+#openCng {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 60%;
+  font-size: 1.5em;
+  height: 6em;
+  width: 6em;
+  border-radius: 70%;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 0.3em solid rgb(178, 23, 217);
+  cursor: pointer;
+}
+
+.openCng:hover {
+  box-shadow: 0 20px 50px 10px rgb(209, 3, 236), 0 15px 30px 10px rgba(0, 174, 255, 0.992);
+  transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+}
+
+#cngContainer > video {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+
+}
+
+.closeCng {
+  z-index: 99;
+}
+
+
+
+/* ---------------------------- Experience bottuns done ----------------- */
+
+
+#projects {
+  background-image: linear-gradient(to bottom right, rgb(40, 5, 61), rgb(7, 29, 73));
+  padding: 1px; 
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: start;
+  align-items: center;
+}
+
+
+.gymProject{
+  margin: 10vh auto; 
+}
+
+.e-commerceProject{
+  margin: 40vh auto; 
+}
+
+.gymImg > a > img {
+  height: 40vh;
+  width: 40vw;
+}
+
+
+
+.e-commerceImg > a > img {
+  height: 40vh;
+  width: 40vw;
+}
+
+
+.gymText > h1 , p {
+
+  margin-bottom: 10vh;
+  margin-left: 10%;
+  max-width: 29vw ;
+  color: white;
+}
+
+.e-commerceText > h1 , p {
+
+  margin-bottom: 10vh;
+  margin-right: 10%; 
+  max-width: 29vw ;
+  color: white;
+
+}
+
+.gymText > h1 {
+
+  font-family: 'Alegreya', serif;
+  font-weight: 800;
+  font-size: 2em;
+  
+
+}
+
+.e-commerceText > h1 {
+
+  margin-left: 8%;
+  font-family: 'Alegreya', serif;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+
+.e-commerceText > p {
+
+  font-family: 'Syne', sans-serif;
+
+}
+
+
+.gymText > p {
+
+  font-family: 'Syne', sans-serif;
+
+}
+
+
+
+/* -----------------------------------------------------projects done---------------------- */
+
+
+
+#contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image:linear-gradient( to bottom right , rgb(40, 5, 61), rgb(7, 29, 73));
+
+}
+
+.contactContainer {
+
+  margin: 30vh auto; 
+
+}
+
+
+.contact-info-container {
+  margin-top: 20%;
+}
+
+.contactText > p {
+  margin-bottom: 1%;
+  margin-top: 10%;
+  font-size: 200%;
+  color: #62cdd8 ;
+}
+.contactText > h1 {
+  margin-top: 7%;
+  font-size: 300%;
+  color: #924bd0;
+}
+
+.contactLink {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLink > .contact-info-container > p > a  {
+  text-decoration: none;
+  color: rgb(231, 193, 246);
+  border: solid 3px rgb(12, 3, 133);
+  background-color: rgb(21, 3, 134);
+  border-radius: 40%;
+}
+
+
+/* --------------------------------contact done--------------------- */
+
