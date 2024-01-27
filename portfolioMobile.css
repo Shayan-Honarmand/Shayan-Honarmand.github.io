@@ -278,30 +278,36 @@
     margin-left: 260%;
     }
 
+}
 
 
+@media only screen and (max-width: 900px) {
 
 
+  
+.profileImgContainer > img {
+  position: absolute;
+  margin-left:  50%;
+  margin-top: 10rem;
+  height: 83.9vh;
+  width: 50vw;
+}
+
+.contactLink{
+  margin-right: 89%;
+  margin-top: 30%;
+}
+
+.contactLink > .contact-info-container > img {
+  margin-bottom: 40%;
+  margin-left: 260%;
+}
 
 
+  .contactLink:last-child > .contact-info-container:last-child {
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    margin-left: 260%;
+    }
 
 }
