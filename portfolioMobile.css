@@ -283,7 +283,7 @@
   }
 
 }
-
+/* -------------------------------------------------- */
 
 @media only screen and (max-width: 900px) {
 
@@ -315,3 +315,146 @@
     }
 
 }
+
+
+
+
+
+
+/* -------------------------------------- */
+
+
+@media only screen and (max-width: 700px) {
+
+
+  
+  .profileImgContainer > img {
+  
+    height: 75vh;
+    width: 50vw;
+  }
+
+
+
+  .profileButtons > a > button {
+    height: 2.5rem;
+    width: 3.5rem;
+  }
+
+
+  .profileIcons {
+    position: absolute;
+    margin: 30rem 3rem;
+  }
+  
+  .profileButtons {
+    position: absolute;
+    margin: 33rem -0.7rem;
+  }
+
+
+  .contactLink{
+    margin-right: 89%;
+    margin-top: 30%;
+  }
+  
+  .contactLink > .contact-info-container > img {
+
+    margin-bottom: 40%;
+    margin-left: 260%;
+  }
+  
+  
+    .contactLink:last-child > .contact-info-container:last-child {
+  
+  
+      margin-left: 260%;
+      }
+
+
+
+  #openCng {
+  margin-top: 100%;
+  margin-left: 50%;
+  font-size: 1em;
+
+  
+  }
+
+   #openMRK {
+  margin-top: 100%;
+  margin-left: 10%;
+  font-size: 1em;
+  
+   } 
+  
+   .aboutMe-inner > h1 {
+    margin-bottom: 2.5em;
+    margin-top: 2em;
+    font-size: 2.3em;
+    
+  }
+  
+  .aboutMe-inner > p { 
+    line-height: 2em;
+    font-size: 0.7em;
+    max-width: 80%;
+    
+  }
+
+  .aboutMe-inner > button {
+
+    margin-left: 35%;
+    margin-top: 6%;
+    font-size: 1em;
+   
+  }
+
+  .my-super-cool-btn{
+    margin-top: 25em;
+    margin-bottom: 10em;
+    color:#fff;
+    letter-spacing:0.1em;
+    font-size:0.4rem;
+  }
+
+  .my-super-cool-btn span{
+    
+    width:100px;
+    height:100px;
+  }
+
+  .contactText > h1 {
+
+    font-size: 2em;
+
+  }
+
+  .contactText > p {
+
+    font-size: 1.5em;
+
+  }
+
+  .contactLink > .contact-info-container > p > a {
+    font-size: 0.4em;
+  
+
+  }
+
+
+  .contactLink > .contact-info-c > img {
+    margin-bottom: 40%;
+    margin-left: 260%;
+  }
+  
+  
+    .contactLink:last-child > .contact-info-container:last-child {
+  
+  
+      margin-left: 280%;
+      }
+
+
+
+  }
